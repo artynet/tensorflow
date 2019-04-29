@@ -842,7 +842,7 @@ def _find_libs(repository_ctx, cuda_config):
               repository_ctx,
               cpu_value,
               cuda_config.cuda_toolkit_path,
-              cuda_config.cuda_version,
+              '',
           ),
       "cusolver":
           _find_cuda_lib(
@@ -850,7 +850,7 @@ def _find_libs(repository_ctx, cuda_config):
               repository_ctx,
               cpu_value,
               cuda_config.cuda_toolkit_path,
-              cuda_config.cuda_version,
+              '',
           ),
       "curand":
           _find_cuda_lib(
@@ -858,7 +858,7 @@ def _find_libs(repository_ctx, cuda_config):
               repository_ctx,
               cpu_value,
               cuda_config.cuda_toolkit_path,
-              cuda_config.cuda_version,
+              '',
           ),
       "cufft":
           _find_cuda_lib(
@@ -866,7 +866,7 @@ def _find_libs(repository_ctx, cuda_config):
               repository_ctx,
               cpu_value,
               cuda_config.cuda_toolkit_path,
-              cuda_config.cuda_version,
+              '',
           ),
       "cudnn":
           _find_cuda_lib(
